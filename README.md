@@ -1,11 +1,11 @@
-# 🚀 Full-Stack Web Application (React + Java + MySQL + SendGrid)
+# Full-Stack Web Application (React + Java + MySQL + SendGrid)
 
 This project is a full-stack web application built using **React.js** for the frontend and **Java (Maven)** for the backend.  
 It uses **MySQL** for data storage and integrates **SendGrid** for automated email notifications such as registration confirmations, feedback alerts, or general communication.
 
 ---
 
-## 🧩 Project Overview
+## Project Overview
 
 The system provides an interactive user interface built with React and a powerful backend developed in Java using Maven.  
 The backend manages data operations, handles API requests, and integrates email functionality using the SendGrid API.  
@@ -13,7 +13,7 @@ The combination of these technologies provides a secure, scalable, and responsiv
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 React Frontend (User Interface)
 ↓ (HTTP Requests)
@@ -24,7 +24,7 @@ MySQL Database
 SendGrid Email API (for outbound emails)
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 **Frontend:**  
 - React.js  
@@ -46,7 +46,7 @@ SendGrid Email API (for outbound emails)
 
 ---
 
-## ✨ Features
+## Features
 
 - 🧑‍💻 User Registration and Login  
 - 📨 Send Email Notifications using SendGrid  
@@ -57,7 +57,7 @@ SendGrid Email API (for outbound emails)
 
 ---
 
-## 🧰 Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 
@@ -70,7 +70,7 @@ Make sure you have the following installed:
 
 ---
 
-## 🗄️ Database Setup
+## Database Setup
 
 1. Create a new database in MySQL:
    ```sql
@@ -111,7 +111,7 @@ public class EmailService {
         sg.api(request);
     }
 }
-⚛️ Frontend Setup (React)
+ Frontend Setup (React)
 Navigate to your frontend folder and install dependencies:
 
 cd frontend
@@ -122,7 +122,7 @@ The app runs by default on http://localhost:3000.
 Create a .env file in the frontend/ folder:
 
 REACT_APP_API_URL=http://localhost:8080
-☕ Backend Setup (Java + Maven)
+ Backend Setup (Java + Maven)
 Navigate to your backend folder:
 
 cd backend
@@ -131,3 +131,4 @@ Build and run the project:
 mvn clean install
 java -jar target/projectname.jar
 If running from an IDE (like IntelliJ or Eclipse), simply run Main.java.
+
