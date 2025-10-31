@@ -1,0 +1,30 @@
+:root{--bg:#f6f8fa;--card:#fff;--accent:#2b6cb0;--muted:#666}
+.root-wrapper{min-height:100vh;display:flex;flex-direction:column}
+body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);margin:0}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:var(--card);box-shadow:0 2px 8px rgba(11,22,33,0.06)}
+.navbar .brand{font-weight:800;font-size:18px;color:var(--accent)}
+.navbar .links a, .navbar .links .link-like{margin-left:14px;text-decoration:none;color:var(--accent);font-weight:600}
+.container{padding:24px;max-width:1100px;margin:0 auto}
+.grid{display:grid;grid-template-columns:1fr 1.4fr;gap:18px}
+.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(11,22,33,0.06);flex:1}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid #f1f4f8;text-align:left}
+.centered{display:flex;min-height:72vh;align-items:center;justify-content:center;padding:20px}
+.card form label{display:block;margin-top:10px;font-size:13px;color:var(--muted)}
+.card form input{width:100%;padding:10px;margin-top:6px;border:1px solid #e6eef6;border-radius:8px}
+button{margin-top:14px;padding:10px 14px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:700}
+.error{color:#c53030;margin-top:8px}
+.muted{color:#666;font-size:12px}
+.link-like{background:none;border:none;color:var(--accent);cursor:pointer;font-weight:600}
+
+/* responsive */
+@media (max-width:900px){
+	.grid{grid-template-columns:1fr}
+	.navbar{padding:10px}
+	.container{padding:12px}
+}
+
+/* small helpers */
+.table .muted-cell{color:var(--muted);font-size:13px}
+.spinner{display:inline-block;width:18px;height:18px;border:3px solid rgba(255,255,255,0.2);border-top-color:#fff;border-radius:50%;animation:spin 1s linear infinite;vertical-align:middle}
+@keyframes spin{to{transform:rotate(360deg)}}
